@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  button(onclick='move("left")') Move Left
+  button(onclick='move("up")') Move Up
+  button(onclick='move("right")') Move Right
+
