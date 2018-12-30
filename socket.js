@@ -11,6 +11,12 @@ var Socket = function () {
             });
         });
 
+        socket.on('stop', function (data) {
+            io.emit('stop-command', {
+                command: `move-${data.side}`
+            });
+        });
+
     };
 
 
