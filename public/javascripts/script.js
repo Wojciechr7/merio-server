@@ -1,4 +1,4 @@
-var socket = io('http://localhost:3000');
+var socket = io('https://merio-server.herokuapp.com');
 
 /*socket.on('move-command', function (data) {
     console.log(`server requests to ${data.command}`)
