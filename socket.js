@@ -7,13 +7,13 @@ var Socket = function () {
 
         socket.on('move', function (data) {
             io.emit('move-command', {
-                command: `move-${data.side}`
+                command: data.side
             });
         });
 
         socket.on('stop', function (data) {
             io.emit('stop-command', {
-                command: `move-${data.side}`
+                command: data.side
             });
         });
 

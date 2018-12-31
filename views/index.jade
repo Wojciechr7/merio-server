@@ -3,7 +3,7 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
-  button(onmousedown='move("left")', onmouseup='stop("left")') Move Left
-  button(onmousedown='move("up")', onmouseup='stop("up")') Move Up
-  button(onmousedown='move("right")', onmouseup='stop("right")') Move Right
+  button(onmousedown='move("ArrowLeft")', onmouseup='stop("ArrowLeft")') Move Left
+  button(onmousedown='move("ArrowUp")', onmouseup='stop("ArrowUp")') Move Up
+  button(onmousedown='move("ArrowRight")', onmouseup='stop("ArrowRight")') Move Right
 
